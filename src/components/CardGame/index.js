@@ -1,9 +1,9 @@
 import './index.css'
 
-const CardGame = () => {
+const CardGame = (cardContent = 'alura-pixel', cardAlt = 'Logo da Alura') => {
     return `
         <article class="card-game">
-            Card game
+            <img src="images/${cardContent}.png" class="card-image" alt="${cardAlt}">
         </article>
     `
 }
