@@ -1,10 +1,10 @@
-import CardGame from './CardGame';
+import BoardGame from './objects/BoardGame/index'
 import './styles/settings/colours.css';
 import './styles/elements/base.css';
 import './styles/generic/reset.css';
 
 const $root = document.getElementById('root');
-const cardGame = CardGame() + CardGame();
+const $htmlBoardGame = BoardGame(1);
 
-$root.insertAdjacentHTML('beforeend', cardGame);
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame);
 
