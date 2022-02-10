@@ -4,7 +4,7 @@ import './styles/elements/base.css';
 import './styles/generic/reset.css';
 
 const $root = document.getElementById('root');
-const cardGame = CardGame();
+const cardGame = CardGame() + CardGame();
 
 $root.insertAdjacentHTML('beforeend', cardGame);
 
