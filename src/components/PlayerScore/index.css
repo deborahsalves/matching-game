@@ -15,3 +15,19 @@
     text-indent: -9999px;
     overflow: hidden;
 }
+
+.player-score[data-points="1"] > .pointer:first-child {
+    background-color: var(--color-mantis);
+}
+
+.player-score[data-points="2"] {
+    flex-direction: row-reverse;
+}
+
+.player-score[data-points="2"] > .pointer:nth-child(n+2) {
+    background-color: var(--color-mantis);
+}
+
+.player-score[data-points="3"] > .pointer {
+    background-color: var(--color-mantis);
+}
