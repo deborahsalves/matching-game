@@ -7,9 +7,10 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 600ms ease-in-out;
+    cursor: pointer;
 }
 
-.card-front-back .-active {
+.card-front-back.-active {
     transform: rotateY(180deg);
 }
 
@@ -18,7 +19,7 @@
     backface-visibility: hidden;
 }
 
-.card-front-back > .card .-back {
+.card-front-back > .card.-back {
     transform: rotateY(180deg);
 }
 
