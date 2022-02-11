@@ -1,0 +1,10 @@
+.player-turn {
+    display: flex;
+    width: 100%;
+    clear: both;
+    margin-left: 32.5%;
+}
+
+.player2 {
+    margin-left: 62.5%;
+}
