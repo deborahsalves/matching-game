@@ -1,10 +1,10 @@
 .player-turn {
-    display: flex;
-    width: 100%;
-    clear: both;
-    margin-left: 32.5%;
+    position: absolute;
+    top: 5px;
+    transform: translateX(-40px);
+    transition: transform 200ms ease-in-out;
 }
 
-.player2 {
-    margin-left: 62.5%;
+.player-turn[data-currentPlayer="2"] {
+    transform: translateX(40px)
 }
