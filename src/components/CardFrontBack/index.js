@@ -1,7 +1,7 @@
 import './index.css';
 import CardGame from '../CardGame/index'
 
-const CardFrontBack = () => {
+const CardFrontBack = (cardContent, cardAlt) => {
     /* in order to NOT overwrite it with the handleClick of another function
     we create a NAMESPACE in the global scope to store this handleClick */
     window.cardFrontBack = {};
@@ -19,7 +19,7 @@ const CardFrontBack = () => {
                 ${CardGame()}
             </div>
             <div class="card -back">
-                ${CardGame('javascript', 'Logo do JS')}
+                ${CardGame(cardContent, cardAlt)}
             </div>
         </article>
     `
